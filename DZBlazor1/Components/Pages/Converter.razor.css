@@ -1,0 +1,39 @@
+.converter-card {
+    max-width: 300px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-family: Arial, sans-serif;
+}
+
+.converter-input {
+    width: 100%;
+    margin-top: 5px;
+    padding: 6px;
+    box-sizing: border-box; 
+.converter-buttons {
+    margin-top: 15px;
+}
+
+.converter-btn {
+    padding: 6px 12px;
+    cursor: pointer;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+    .converter-btn:hover {
+        background-color: #e0e0e0;
+    }
+
+    .converter-btn:first-child {
+        margin-right: 8px;
+    }
+
+.converter-result {
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 1.1em;
+    color: #333;
+}

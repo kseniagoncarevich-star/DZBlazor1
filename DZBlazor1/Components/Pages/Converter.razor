@@ -1,0 +1,23 @@
+﻿@page "/converter"
+@rendermode InteractiveServer
+
+<h3>Converter</h3>
+
+<div class="converter-card">
+    <label for="amountInput">Сумма (в рублях):</label>
+    <input type="number"
+           id="amountInput"
+           @bind="amount"
+           @bind:event="oninput"
+           class="converter-input"
+           placeholder="Введите сумму" />
+
+    <div class="converter-buttons">
+        <button @onclick="ConvertToUsd" class="converter-btn">Перевести в USD</button>
+        <button @onclick="ConvertToEur" class="converter-btn">Перевести в EUR</button>
+    </div>
+
+    <div class="converter-result">
+        Результат: @result.ToString("F2")
+    </div>
+</div>
